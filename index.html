@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Layout Example</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 колонка */
+        gap: 20px;
+        padding: 20px;
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .box {
+        background: white;
+        border-radius: 12px;
+        padding: 20px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      /* Әр блокқа өлшем беру */
+      .box1 {
+        grid-column: span 1;
+        grid-row: span 2;
+        background: #fde9d9;
+        width: 250px;
+        height: 300px;
+        position: relative;
+      }
+      .text {
+        font-size: 40px;
+        margin-top: -5px;
+      }
+      .box2 {
+        grid-column: span 2;
+        background: #8e6cf0;
+        color: white;
+        height: 350px;
+        width: 600px;
+      }
+      .box3 {
+        grid-column: span 1;
+        grid-row: span 2;
+        background: #e6dcf9;
+      }
+      .box4 {
+        grid-column: span 1;
+        grid-row: span 2;
+        background: #fcd68a;
+      }
+      .box5 {
+        grid-column: span 1;
+        background: #fff;
+      }
+      .box6 {
+        grid-column: span 1;
+        background: #fff;
+      }
+      .box7 {
+        grid-column: span 1;
+        background: #fcd68a;
+      }
+      .box8 {
+        grid-column: span 1;
+        background: #fff;
+      }
+      .box9 {
+        grid-column: span 2;
+        background: #8e6cf0;
+        color: white;
+      }
+      .violet {
+        color: #8e6cf0;
+      }
+      .post {
+        position: absolute;
+        bottom: 10px;
+        left: 50px;
+        width: 200px;
+        height: 100px;
+      }
+      .social {
+        font-size: 50px;
+      }
+      .stars {
+        width: 250px;
+        height: 50px;
+        margin-top: 5px;
+      }
+      .starp {
+        font-size: 15px;
+        color: white;
+      }
+      .yellow {
+        color: yellow;
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1">
+        <p class="text">
+          Create & Schedule content<span class="violet"> quicker</span>
+        </p>
+        <img src="assets/images/illustration-create-post.webp" class="post" />
+      </div>
+      <div class="box box2">
+        <p class="social">
+          Social Media <span class="yellow">10x</span> Faster with AI
+        </p>
+        <img src="assets/images/illustration-five-stars.webp" class="stars" />
+        <p class="starp">Over 4,000 5-star reviews</p>
+      </div>
+      <div class="box box3">Schedule to Social</div>
+      <div class="box box4">Write with AI</div>
+      <div class="box box5">Manage Accounts</div>
+      <div class="box box6">56% Growth</div>
+      <div class="box box7">Posting Schedule</div>
+      <div class="box box8">Follower Growth</div>
+      <div class="box box9">Grow Followers</div>
+    </div>
+  </body>
+</html>
